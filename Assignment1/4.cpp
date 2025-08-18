@@ -28,6 +28,7 @@ int getNum() {
 }
 
 std::vector<int> assembleVector(int num) {
+  // Assemble a vector with integers from 1 to num
   std::vector<int> v1;
   for (int i = 1; i <= num; i++) {
     v1.push_back(i);
