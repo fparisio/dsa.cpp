@@ -74,19 +74,3 @@ void printPercentageGrade(double& grade) {
 void printLetterGrade(char& grade) {
   std::cout << "Letter Grade: " << grade << std::endl;
 }
-
-int main() {
-  // Get grades from user input
-  std::vector<double> grades = getGrades({"Math", "Physics", "Chemistry"});
-
-  // Calculate final grade
-  double percentage_grade = getFinalGrade(grades);
-  char letter_grade = getLetterGrade(percentage_grade);
-
-  // Print messages
-  printPercentageGrade(percentage_grade);
-  printPassFail(letter_grade);
-  printLetterGrade(letter_grade);
-
-  return 0;
-}
