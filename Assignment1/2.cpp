@@ -1,6 +1,8 @@
 // Copyright 2025 Francesco Parisio
 // Star Pattern Implementation
-#include "patterns.h"
+#include <iostream>
+
+#include "patterns.h"  // NOLINT(build/include_subdir)
 
 void StarPattern::printPattern() {
   for (int i = 0; i < user_input; i++) {

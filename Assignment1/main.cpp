@@ -3,7 +3,8 @@
 #include <iostream>
 #include <vector>
 
-#include "patterns.h"
+// include the directory when naming the header file
+#include "patterns.h"  // NOLINT(build/include_subdir)
 
 // void exercise_1() {
 //   // Ex1: final grade calculation

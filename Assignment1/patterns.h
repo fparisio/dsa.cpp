@@ -1,5 +1,7 @@
-#ifndef PATTERNS_H
-#define PATTERNS_H
+// Copyright 2025 Francesco Parisio
+
+#ifndef ASSIGNMENT1_PATTERNS_H_
+#define ASSIGNMENT1_PATTERNS_H_
 
 #include <iostream>
 #include <vector>
@@ -36,4 +38,4 @@ class DiamondPattern : public PatternBase {
   void printPattern() override;  // Declaration only
 };
 
-#endif
+#endif  // ASSIGNMENT1_PATTERNS_H_

@@ -1,6 +1,8 @@
 // Copyright 2025 Francesco Parisio
 // Number Pattern Implementation
-#include "patterns.h"
+#include <iostream>
+
+#include "patterns.h"  // NOLINT(build/include_subdir)
 
 void NumberPattern::assembleVector() {
   assembled_vector.clear();
