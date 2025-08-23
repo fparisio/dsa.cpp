@@ -19,7 +19,7 @@ class PatternBase {
 };
 
 // Derived classes - declarations only
-class StarPattern : public PatternBase {
+class TrianglePattern : public PatternBase {
  public:
   void printPattern() override;
 };
@@ -39,6 +39,11 @@ class BottomDiamondPattern : public PatternBase {
 };
 
 class FullDiamondPattern : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
+class TrianglePatternBinary : public TrianglePattern {
  public:
   void printPattern() override;
 };

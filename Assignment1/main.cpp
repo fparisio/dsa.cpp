@@ -22,7 +22,7 @@
 
 void exercise_2() {
   // Ex2: First pattern
-  StarPattern pattern;
+  TrianglePattern pattern;
   pattern.userInput();
   pattern.execute();
 }
@@ -48,11 +48,19 @@ void exercise_6() {
   pattern.execute();
 }
 
+void exercise_7() {
+  // Ex3: Full diamond pattern
+  TrianglePatternBinary pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
-  // exercise_2();
-  // exercise_4();
-  // exercise_5();
+  exercise_2();
+  exercise_4();
+  exercise_5();
   exercise_6();
+  exercise_7();
 
   return 0;
 }
