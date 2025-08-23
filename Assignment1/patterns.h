@@ -38,4 +38,9 @@ class BottomDiamondPattern : public PatternBase {
   void printPattern() override;
 };
 
+class FullDiamondPattern : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_

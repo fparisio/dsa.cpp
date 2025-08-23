@@ -35,16 +35,24 @@ void exercise_4() {
 }
 
 void exercise_5() {
-  // Ex3: Diamond pattern
+  // Ex3: Bottom diamond pattern
   BottomDiamondPattern pattern;
   pattern.userInput();
   pattern.execute();
 }
 
+void exercise_6() {
+  // Ex3: Full diamond pattern
+  FullDiamondPattern pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
-  exercise_2();
-  exercise_4();
-  exercise_5();
+  // exercise_2();
+  // exercise_4();
+  // exercise_5();
+  exercise_6();
 
   return 0;
 }
