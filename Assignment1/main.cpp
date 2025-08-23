@@ -33,9 +33,18 @@ void exercise_4() {
   pattern.userInput();
   pattern.execute();
 }
+
+void exercise_5() {
+  // Ex3: Diamond pattern
+  BottomDiamondPattern pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
   exercise_2();
   exercise_4();
+  exercise_5();
 
   return 0;
 }

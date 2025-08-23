@@ -1,6 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
 SOURCES = $(wildcard *.cpp)
+HEADERS = $(wildcard *.h)
 OBJECTS = $(SOURCES:.cpp=.o)
 TARGET = patterns
 

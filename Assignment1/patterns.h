@@ -13,29 +13,29 @@ class PatternBase {
 
  public:
   virtual ~PatternBase() = default;
-  void userInput();                 // Declaration only
-  virtual void printPattern() = 0;  // Pure virtual
-  void execute();                   // Declaration only
+  void userInput();
+  virtual void printPattern() = 0;
+  void execute();
 };
 
 // Derived classes - declarations only
 class StarPattern : public PatternBase {
  public:
-  void printPattern() override;  // Declaration only
+  void printPattern() override;
 };
 
 class NumberPattern : public PatternBase {
  private:
   std::vector<int> assembled_vector;
-  void assembleVector();  // Declaration only
+  void assembleVector();
 
  public:
-  void printPattern() override;  // Declaration only
+  void printPattern() override;
 };
 
-class DiamondPattern : public PatternBase {
+class BottomDiamondPattern : public PatternBase {
  public:
-  void printPattern() override;  // Declaration only
+  void printPattern() override;
 };
 
 #endif  // ASSIGNMENT1_PATTERNS_H_
