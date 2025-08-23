@@ -1,3 +1,5 @@
+// Copyright 2025 Francesco Parisio
+
 #include <iostream>
 #include <vector>
 
@@ -31,7 +33,7 @@ void exercise_4() {
   pattern.execute();
 }
 int main() {
-    exercise_2();
+  exercise_2();
   exercise_4();
 
   return 0;
