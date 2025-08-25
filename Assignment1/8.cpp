@@ -4,9 +4,12 @@
 
 #include "patterns.h"  // NOLINT(build/include_subdir)
 
-void UPatternNums::userInput() {
-  std::cout << "Type an integer (max 2 digits): " << std::endl;
-  std::cin >> user_input;
+void UPatternNums::userInput(int user_input) {
+  if (user_input == 0) {
+    std::cout << "Type an integer (max 2 digits): " << std::endl;
+    std::cin >> user_input;
+  }
+  this->user_input = user_input;
 }
 
 void UPatternNums::printPattern() {

@@ -4,9 +4,12 @@
 
 #include <iostream>
 
-void PatternBase::userInput() {
-  std::cout << "Type an integer: " << std::endl;
-  std::cin >> user_input;
+void PatternBase::userInput(int user_input) {
+  if (user_input == 0) {
+    std::cout << "Type an integer: " << std::endl;
+    std::cin >> user_input;
+  }
+  this->user_input = user_input;
 }
 
 void PatternBase::execute() { printPattern(); }

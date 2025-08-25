@@ -53,9 +53,12 @@ void printHollowRhombus(int user_input) {
   }
 }
 
-void DoubleRombus::userInput() {
-  std::cout << "Enter the rhombus size (e.g., 4): " << std::endl;
-  std::cin >> user_input;
+void DoubleRombus::userInput(int user_input) {
+  if (user_input == 0) {
+    std::cout << "Enter the rhombus size (e.g., 4): " << std::endl;
+    std::cin >> user_input;
+  }
+  this->user_input = user_input;
 }
 
 void DoubleRombus::printPattern() {

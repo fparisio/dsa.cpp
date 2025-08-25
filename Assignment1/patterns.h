@@ -13,7 +13,7 @@ class PatternBase {
 
  public:
   virtual ~PatternBase() = default;
-  virtual void userInput();
+  virtual void userInput(int user_input = 0);
   virtual void printPattern() = 0;
   void execute();
 };
@@ -50,7 +50,7 @@ class TrianglePatternBinary : public TrianglePattern {
 
 class UPatternNums : public PatternBase {
  public:
-  void userInput() override;
+  void userInput(int user_input = 0) override;
   void printPattern() override;
 };
 
@@ -81,7 +81,7 @@ class SquareNumbers : public PatternBase {
 
 class DoubleRombus : public PatternBase {
  public:
-  void userInput() override;
+  void userInput(int user_input = 0) override;
   void printPattern() override;
 };
 
