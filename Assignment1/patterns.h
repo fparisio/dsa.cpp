@@ -74,4 +74,9 @@ class HollowSquare : public PatternBase {
   void printPattern() override;
 };
 
+class SquareNumbers : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_
