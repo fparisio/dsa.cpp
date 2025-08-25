@@ -68,6 +68,20 @@ void exercise_9() {
   pattern.execute();
 }
 
+void exercise_10() {
+  // Ex10: Hollow diamond pattern
+  HollowDiamond pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
+void exercise_11() {
+  // Ex11: Butterfly pattern
+  Butterfly pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
   // exercise_1();
   // exercise_2();
@@ -77,7 +91,9 @@ int main() {
   // exercise_6();
   // exercise_7();
   // exercise_8();
-  exercise_9();
+  // exercise_9();
+  // exercise_10();
+  exercise_11();
 
   return 0;
 }

@@ -59,4 +59,14 @@ class TriangleLetters : public PatternBase {
   void printPattern() override;
 };
 
+class HollowDiamond : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
+class Butterfly : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_
