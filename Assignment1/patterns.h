@@ -54,4 +54,9 @@ class UPatternNums : public PatternBase {
   void printPattern() override;
 };
 
+class TriangleLetters : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_

@@ -61,8 +61,15 @@ void exercise_8() {
   pattern.execute();
 }
 
+void exercise_9() {
+  // Ex9: Triangle with letters pattern
+  TriangleLetters pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
-  exercise_1();
+  // exercise_1();
   // exercise_2();
   // exercise_3();
   // exercise_4();
@@ -70,6 +77,7 @@ int main() {
   // exercise_6();
   // exercise_7();
   // exercise_8();
+  exercise_9();
 
   return 0;
 }
