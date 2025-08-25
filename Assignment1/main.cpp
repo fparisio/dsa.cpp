@@ -4,21 +4,13 @@
 #include <vector>
 
 // include the directory when naming the header file
-#include "patterns.h"  // NOLINT(build/include_subdir)
+#include "grade_calculator.h"  // NOLINT(build/include_subdir)
+#include "patterns.h"          // NOLINT(build/include_subdir)
 
-// void exercise_1() {
-//   // Ex1: final grade calculation
-//   std::vector<double> grades = getGrades({"Math", "Physics", "Chemistry"});
-
-//   // Calculate final grade
-//   double percentage_grade = getFinalGrade(grades);
-//   char letter_grade = getLetterGrade(percentage_grade);
-
-//   // Print messages
-//   printPercentageGrade(percentage_grade);
-//   printPassFail(letter_grade);
-//   printLetterGrade(letter_grade);
-// }
+void exercise_1() {
+  // Ex1: Grade calculator
+  averageGradeCalculator();
+}
 
 void exercise_2() {
   // Ex2: Triangle pattern
@@ -70,13 +62,14 @@ void exercise_8() {
 }
 
 int main() {
+  exercise_1();
   // exercise_2();
   // exercise_3();
   // exercise_4();
   // exercise_5();
   // exercise_6();
   // exercise_7();
-  exercise_8();
+  // exercise_8();
 
   return 0;
 }
