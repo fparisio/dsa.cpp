@@ -1,131 +1,40 @@
 // Copyright 2025 Francesco Parisio
 
 #include <iostream>
+#include <memory>
 #include <vector>
 
 // include the directory when naming the header file
 #include "grade_calculator.h"  // NOLINT(build/include_subdir)
 #include "patterns.h"          // NOLINT(build/include_subdir)
 
-void exercise_1() {
+int main() {
   // Ex1: Grade calculator
   averageGradeCalculator();
-}
 
-void exercise_2() {
-  // Ex2: Triangle pattern
-  TrianglePattern pattern;
-  pattern.userInput();
-  pattern.execute();
-}
+  // Create a list of all pattern exercises using smart pointers
+  std::vector<std::unique_ptr<PatternBase>> exercises;
+  exercises.push_back(std::make_unique<TrianglePattern>());        // Ex2
+  exercises.push_back(std::make_unique<TrianglePattern>());        // Ex3
+  exercises.push_back(std::make_unique<NumberPattern>());          // Ex4
+  exercises.push_back(std::make_unique<BottomDiamondPattern>());   // Ex5
+  exercises.push_back(std::make_unique<FullDiamondPattern>());     // Ex6
+  exercises.push_back(std::make_unique<TrianglePatternBinary>());  // Ex7
+  exercises.push_back(std::make_unique<UPatternNums>());           // Ex8
+  exercises.push_back(std::make_unique<TriangleLetters>());        // Ex9
+  exercises.push_back(std::make_unique<HollowDiamond>());          // Ex10
+  exercises.push_back(std::make_unique<Butterfly>());              // Ex11
+  exercises.push_back(std::make_unique<HollowSquare>());           // Ex12
+  exercises.push_back(std::make_unique<SquareNumbers>());          // Ex13
+  exercises.push_back(std::make_unique<DoubleRombus>());           // Ex14
+  exercises.push_back(std::make_unique<NumberedDiamond>());        // Ex15
 
-void exercise_3() {
-  // Ex3: Triangle pattern (repeats Ex2)
-  TrianglePattern pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_4() {
-  // Ex4: Second pattern
-  NumberPattern pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_5() {
-  // Ex5: Bottom diamond pattern
-  BottomDiamondPattern pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_6() {
-  // Ex6: Full diamond pattern
-  FullDiamondPattern pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_7() {
-  // Ex7: Triangle pattern with 1 and 0
-  TrianglePatternBinary pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_8() {
-  // Ex8: U pattern with numbers
-  UPatternNums pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_9() {
-  // Ex9: Triangle with letters pattern
-  TriangleLetters pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_10() {
-  // Ex10: Hollow diamond pattern
-  HollowDiamond pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_11() {
-  // Ex11: Butterfly pattern
-  Butterfly pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_12() {
-  // Ex12: Hollow square pattern
-  HollowSquare pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_13() {
-  // Ex13: Square with numbers pattern
-  SquareNumbers pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_14() {
-  // Ex14: Rombuses pattern
-  DoubleRombus pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-void exercise_15() {
-  // Ex15: Numbered diamond pattern
-  NumberedDiamond pattern;
-  pattern.userInput();
-  pattern.execute();
-}
-
-int main() {
-  exercise_1();
-  exercise_2();
-  exercise_3();
-  exercise_4();
-  exercise_5();
-  exercise_6();
-  exercise_7();
-  exercise_8();
-  exercise_9();
-  exercise_10();
-  exercise_11();
-  exercise_12();
-  exercise_13();
-  exercise_14();
-  exercise_15();
+  // Loop through and run each exercise
+  for (const auto& exercise : exercises) {
+    exercise->userInput();
+    exercise->execute();
+    std::cout << "-------------------------" << std::endl;
+  }
 
   return 0;
 }
