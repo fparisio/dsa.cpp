@@ -12,7 +12,7 @@ void TriangleLetters::printPattern() {
 
   for (int i = 0; i < user_input; i++) {
     for (int j = user_input - i - 1; j < user_input; j++) {
-      std::cout << (char)('A' + j);
+      std::cout << static_cast<char>('A' + j);
       if (j < user_input - 1) {
         std::cout << " ";
       }

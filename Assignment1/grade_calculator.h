@@ -1,7 +1,8 @@
-// filepath: dsa.cpp/Assignment1/grade_calculator.h
-#ifndef GRADE_CALCULATOR_H
-#define GRADE_CALCULATOR_H
+// Copyright 2025 Francesco Parisio
+
+#ifndef ASSIGNMENT1_GRADE_CALCULATOR_H_
+#define ASSIGNMENT1_GRADE_CALCULATOR_H_
 
 void averageGradeCalculator();
 
-#endif  // GRADE_CALCULATOR_H
+#endif  // ASSIGNMENT1_GRADE_CALCULATOR_H_

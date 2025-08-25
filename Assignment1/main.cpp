@@ -82,6 +82,13 @@ void exercise_11() {
   pattern.execute();
 }
 
+void exercise_12() {
+  // Ex12: Hollow square pattern
+  HollowSquare pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
   // exercise_1();
   // exercise_2();
@@ -91,9 +98,10 @@ int main() {
   // exercise_6();
   // exercise_7();
   // exercise_8();
-  // exercise_9();
+  exercise_9();
   // exercise_10();
-  exercise_11();
+  // exercise_11();
+  exercise_12();
 
   return 0;
 }
