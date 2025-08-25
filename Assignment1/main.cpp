@@ -21,46 +21,62 @@
 // }
 
 void exercise_2() {
-  // Ex2: First pattern
+  // Ex2: Triangle pattern
+  TrianglePattern pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
+void exercise_3() {
+  // Ex3: Triangle pattern (repeats Ex2)
   TrianglePattern pattern;
   pattern.userInput();
   pattern.execute();
 }
 
 void exercise_4() {
-  // Ex3: Second pattern
+  // Ex4: Second pattern
   NumberPattern pattern;
   pattern.userInput();
   pattern.execute();
 }
 
 void exercise_5() {
-  // Ex3: Bottom diamond pattern
+  // Ex5: Bottom diamond pattern
   BottomDiamondPattern pattern;
   pattern.userInput();
   pattern.execute();
 }
 
 void exercise_6() {
-  // Ex3: Full diamond pattern
+  // Ex6: Full diamond pattern
   FullDiamondPattern pattern;
   pattern.userInput();
   pattern.execute();
 }
 
 void exercise_7() {
-  // Ex3: Full diamond pattern
+  // Ex7: Triangle pattern with 1 and 0
   TrianglePatternBinary pattern;
   pattern.userInput();
   pattern.execute();
 }
 
+void exercise_8() {
+  // Ex8: U pattern with numbers
+  UPatternNums pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
-  exercise_2();
-  exercise_4();
-  exercise_5();
-  exercise_6();
-  exercise_7();
+  // exercise_2();
+  // exercise_3();
+  // exercise_4();
+  // exercise_5();
+  // exercise_6();
+  // exercise_7();
+  exercise_8();
 
   return 0;
 }

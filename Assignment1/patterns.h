@@ -13,7 +13,7 @@ class PatternBase {
 
  public:
   virtual ~PatternBase() = default;
-  void userInput();
+  virtual void userInput();
   virtual void printPattern() = 0;
   void execute();
 };
@@ -45,6 +45,12 @@ class FullDiamondPattern : public PatternBase {
 
 class TrianglePatternBinary : public TrianglePattern {
  public:
+  void printPattern() override;
+};
+
+class UPatternNums : public PatternBase {
+ public:
+  void userInput() override;
   void printPattern() override;
 };
 
