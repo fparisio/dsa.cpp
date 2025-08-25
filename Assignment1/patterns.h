@@ -85,4 +85,9 @@ class DoubleRombus : public PatternBase {
   void printPattern() override;
 };
 
+class NumberedDiamond : public PatternBase {
+ public:
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_

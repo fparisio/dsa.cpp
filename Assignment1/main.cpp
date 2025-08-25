@@ -103,21 +103,29 @@ void exercise_14() {
   pattern.execute();
 }
 
+void exercise_15() {
+  // Ex15: Numbered diamond pattern
+  NumberedDiamond pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
 int main() {
-  // exercise_1();
-  // exercise_2();
-  // exercise_3();
-  // exercise_4();
-  // exercise_5();
-  // exercise_6();
-  // exercise_7();
-  // exercise_8();
-  // exercise_9();
-  // exercise_10();
-  // exercise_11();
-  // exercise_12();
-  // exercise_13();
+  exercise_1();
+  exercise_2();
+  exercise_3();
+  exercise_4();
+  exercise_5();
+  exercise_6();
+  exercise_7();
+  exercise_8();
+  exercise_9();
+  exercise_10();
+  exercise_11();
+  exercise_12();
+  exercise_13();
   exercise_14();
+  exercise_15();
 
   return 0;
 }
