@@ -79,4 +79,10 @@ class SquareNumbers : public PatternBase {
   void printPattern() override;
 };
 
+class DoubleRombus : public PatternBase {
+ public:
+  void userInput() override;
+  void printPattern() override;
+};
+
 #endif  // ASSIGNMENT1_PATTERNS_H_

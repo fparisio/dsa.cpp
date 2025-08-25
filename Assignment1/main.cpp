@@ -90,8 +90,15 @@ void exercise_12() {
 }
 
 void exercise_13() {
-  // Ex12: Hollow square pattern
+  // Ex13: Square with numbers pattern
   SquareNumbers pattern;
+  pattern.userInput();
+  pattern.execute();
+}
+
+void exercise_14() {
+  // Ex14: Rombuses pattern
+  DoubleRombus pattern;
   pattern.userInput();
   pattern.execute();
 }
@@ -109,7 +116,8 @@ int main() {
   // exercise_10();
   // exercise_11();
   // exercise_12();
-  exercise_13();
+  // exercise_13();
+  exercise_14();
 
   return 0;
 }
